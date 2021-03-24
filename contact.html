@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+
+<head>
+    <title>CAR DEALER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+        function initialize()
+        {
+        var mapOpt = {
+          center:new google.maps.LatLng(23.8103771,90.41245449999997),
+          zoom:10,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapOpt);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+	
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    
+    <div class="sidebar-menu-container" id="sidebar-menu-container">
+
+		<div class="sidebar-menu-push">
+
+			<div class="sidebar-menu-overlay"></div>
+
+			<div class="sidebar-menu-inner">
+				<div class="pre-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 hidden-xs">
+								<div class="left-info">
+									<a href="#"><i class="fa fa-envelope"></i>info@cardealer.com</a>
+								</div>
+							</div>
+							<div class="col-md-6 hidden-xs">
+								<div class="right-info">
+									<ul>
+										<li>
+											<a href="#"><i class="fa fa-facebook"></i></a>
+											<a href="#"><i class="fa fa-twitter"></i></a>
+											<a href="#"><i class="fa fa-behance"></i></a>
+											<a href="#"><i class="fa fa-google"></i></a>
+											<a href="#"><i class="fa fa-pinterest"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<header class="site-header">
+					<div id="main-header" class="main-header header-sticky">
+						<div class="container clearfix">
+							<div class="logo">
+								<a href="index.html">CAR DEALER<em>Car Dealer Template</em></a>
+							</div>
+							<div class="header-right-toggle pull-right hidden-md hidden-lg">
+								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
+							</div>
+							<nav class="main-navigation pull-right hidden-xs hidden-sm">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="cars.html">Cars</a>
+									</li>
+									<li><a href="blog.html">Blog</a>
+									</li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+                
+                
+                <section class="contact">
+                    <div class="blury-bg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="info-item">
+                                        <i class="fa fa-phone"></i>
+                                        <h4>Call us on:</h4>
+                                        <div class="line-dec"></div>
+                                        <span>00386 / 49 - 511 - 868</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="info-item">
+                                        <i class="fa fa-envelope"></i>
+                                        <h4>Email us on:</h4>
+                                        <div class="line-dec"></div>
+                                        <span>info@cardealer.com</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="info-item">
+                                        <i class="fa fa-map-marker"></i>
+                                        <h4>Find us on:</h4>
+                                        <div class="line-dec"></div>
+                                        <span>591 dhaka,bangladesh</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" id="googleMap" style="width:100%;height:320px; margin:15px;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                
+
+                <footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="footer-item">
+									<div class="about-autocar">
+										<h2>About Autocar</h2>
+										<div class="line-dec"></div>
+										<p>Irony actually meditation, occupy mumblecore wayfarers organic pickled 90's. Intelligentsia as actually +1 meh photo booth.<br><br>Austin kale chips chia, fixie meggings migas whatever PitchforkWes Anderson.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="footer-item">
+									<div class="what-offer">
+										<h2>What We Offer ?</h2>
+										<div class="line-dec"></div>
+										<ul>
+											<li><a href="#">- Rent a car now</a></li>
+											<li><a href="#">- Search for sale</a></li>
+											<li><a href="#">- Try search form</a></li>
+											<li><a href="#">- Best daily dealers</a></li>
+											<li><a href="#">- Weekly lucky person</a></li>
+											<li><a href="#">- Change car color</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="footer-item">
+									<div class="need-help">
+										<h2>Need Help ?</h2>
+										<div class="line-dec"></div>
+										<ul>
+											<li><a href="#">- Modern wheels</a></li>
+											<li><a href="#">- Awesome spoilers</a></li>
+											<li><a href="#">- Dynamic Enetrior</a></li>
+											<li><a href="#">- Save accidents </a></li>
+											<li><a href="#">- Recorded Racing</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="footer-item">
+									<div class="recent-posts">
+										<h2>About Autocar</h2>
+										<div class="line-dec"></div>
+										<div class="recent-item">
+											<a href="single-post.html"><img src="img/01-recent-thumb.jpg" alt=""></a>
+											<a href="single-post.html"><h4>Porsche Cayen Last Serie</h4></a>
+											<div class="line-dec"></div>
+											<span>$45.000</span>
+										</div>
+										<div class="recent-item">
+											<a href="single-post.html"><img src="img/02-recent-thumb.jpg" alt=""></a>
+											<a href="single-post.html"><h4>Cadillac Escalade Gorod Serie</h4></a>
+											<div class="line-dec"></div>
+											<span>$92.000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="footer-item">
+									<div class="connect-us">
+										<h2>About Autocar</h2>
+										<div class="line-dec"></div>
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-behance"></i></a></li>
+											<li><a href="#"><i class="fa fa-rss"></i></a></li>
+											<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											<li><a href="#"><i class="fa fa-google"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+
+				<div class="sub-footer">
+					<div class="container">
+						<div class="row">
+							<p>Copyright 2016</p>
+						</div>
+					</div>
+				</div>
+				
+
+				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+			</div>
+
+		</div>
+
+		<nav class="sidebar-menu slide-from-left">
+			<div class="nano">
+				<div class="content">
+					<nav class="responsive-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Cars</a>
+							</li>
+							<li ><a href="#">Blog</a>
+							</li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script src="js/jquery.themepunch.tools.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
